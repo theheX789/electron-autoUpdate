@@ -9,12 +9,10 @@
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always"
   },
-  "directories": {
-    "buildResources": "build"
-  },
-  "win": {
-    "target": "nsis",
-    "icon": "build/icons/icon.ico"
+  "build": {
+    "win": {
+      "icon": "build/icons/icon.ico"
+    }
   },
   "repository": {
     "type": "git",
