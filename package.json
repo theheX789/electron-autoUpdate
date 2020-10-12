@@ -1,6 +1,6 @@
 {
   "name": "electron-autoupdate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -8,6 +8,10 @@
     "start": "electron .",
     "build": "electron-builder build --win --publish never",
     "deploy": "electron-builder build --win --publish always"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "images/icon.ico"
   },
   "repository": {
     "type": "git",
